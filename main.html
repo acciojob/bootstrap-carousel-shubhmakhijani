@@ -2,12 +2,58 @@
 <html>
 <head>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <style>
+        /* Optional styling for better visualization */
+        .carousel-inner .item {
+            height: 300px;
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+        }
+        .first-slide { background-color: #e74c3c; }
+        .second-slide { background-color: #3498db; }
+        .third-slide { background-color: #2ecc71; }
+        .fourth-slide { background-color: #f39c12; }
+        .fifth-slide { background-color: #9b59b6; }
+    </style>
 </head>
 <body>
     <!-- Write your code here -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Slides -->
+        <div class="carousel-inner">
+            <div class="item first-slide">
+                First Slide
+            </div>
+            <div class="item second-slide">
+                Second Slide
+            </div>
+            <div class="item third-slide active">
+                Third Slide (Active by default)
+            </div>
+            <div class="item fourth-slide">
+                Fourth Slide
+            </div>
+            <div class="item fifth-slide">
+                Fifth Slide
+            </div>
+        </div>
+
+        <!-- Controls -->
+        <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+            <span class="glyphicon glyphicon-chevron-left"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="right carousel-control" href="#myCarousel" data-slide="next">
+            <span class="glyphicon glyphicon-chevron-right"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
     <!-- Bootstrap Bundle with Popper -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
- 
 </html>
